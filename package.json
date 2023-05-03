@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "csv": "^6.2.11",
     "csv-stringify": "^6.3.3",
-    "@faker-js/faker": "^7.6.0"
+    "nanoid": "^4.0.2"
   }
 }

@@ -16,7 +16,8 @@ for (let i = 0; i < numRows; i++) {
   const countryCode = countryCodes[faker.datatype.number(5)];
   const phoneNumber = nanoid();
   const hasTag = faker.datatype.boolean();
-  records.push({ name, countryCode, phoneNumber, hasTag });
+  const email = faker.internet.email();
+  records.push({ name, countryCode, phoneNumber, email, hasTag });
 }
 
 stringify(
@@ -27,6 +28,7 @@ stringify(
       name: "Name",
       countryCode: "Country Code",
       phoneNumber: "Phone Number",
+      email: "Email",
       hasTag: "Tag",
     },
   },
